@@ -72,19 +72,11 @@
             gap: 10px;
         }
 
-        .navbar .buttons a {
+        .navbar .buttons .get-started {
             padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
             font-weight: 600;
-        }
-
-        .navbar .buttons .live-demo {
-            border: 1px solid rgb(0, 0, 0);
-            color: rgb(0, 0, 0);
-        }
-
-        .navbar .buttons .get-started {
             background-color: #28a745;
             color: white;
         }
@@ -116,7 +108,7 @@
 
         .main .buttons {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 10px;
             margin: 20px 0;
         }
@@ -131,11 +123,6 @@
         .main .buttons .get-started {
             background-color: #28a745;
             color: white;
-        }
-
-        .main .buttons .live-demo {
-            border: 1px solid #000;
-            color: #000;
         }
 
         .main .content {
@@ -179,6 +166,9 @@
             display: flex;
             align-items: center;
             gap: 20px;
+            max-width: 600px;
+            margin: 0;
+            justify-content: flex-start;
         }
 
         .footer p {
@@ -192,13 +182,15 @@
         }
 
         .footer .logos {
-            display: flex;
-            gap: 20px;
-            align-items: center;
+            font-size: 14px;
+            color: #6c757d;
         }
 
-        .footer .logos img {
-            height: 40px;
+        .reviews {
+            font-size: 14px;
+            color: #28a745;
+            text-decoration: underline;
+            margin-left: auto;
         }
     </style>
 </head>
@@ -212,7 +204,7 @@
             </a>
         </div>
         <div class="navbar">
-            <img src="smushi.png" alt="">
+            <img src="smushi.png" alt="Smushsi logo">
             <nav>
                 <a href="#">
                     Solutions
@@ -231,9 +223,6 @@
                 </a>
             </nav>
             <div class="buttons">
-                <a class="live-demo" href="#">
-                    Live Demo
-                </a>
                 <a class="get-started" href="#">
                     Get Started
                 </a>
@@ -261,31 +250,19 @@
                         <a class="get-started" href="#">
                             Get Started
                         </a>
-                        <a class="live-demo" href="#">
-                            Live Demo
-                        </a>
                     </div>
                 </div>
                 <div class="grey-box"></div>
             </div>
         </div>
-        <div class="footer">
-            <p>
-                Improving the relationships
-                <span class="line-break">
-                    of customer and businesses:
-                </span>
-            </p>
+        <div class="footer" style="justify-content: flex-start;">
+            <p>⭐⭐⭐⭐⭐</p>
             <div class="logos">
-                <img src="Smushsi_l.png" alt="">
-                <h3>smushsi</h3>
-                <img src="Marshi_l.png" alt="">
-                <h3>marshi</h3>
-                <img src="Cotokishi_l.png" alt="">
-                <h3>cotokishi</h3>
-                <img src="Ranshishi_l.png" alt="">
-                <h3>ranshishi</h3>
+                72 customers in past month.
             </div>
+            <a class="reviews" href="#">
+                All reviews
+            </a>
         </div>
     </div>
 </body>
