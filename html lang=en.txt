@@ -1,0 +1,289 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Smushsi CRM for Wyvate
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: rgb(248, 249, 250);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 1200px;
+            max-width: 100%;
+            border: 40px solid rgb(40, 167, 69);
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: rgb(26, 26, 26);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .header a {
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .navbar img {
+            height: 40px;
+        }
+
+        .navbar nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar nav a .fa-caret-down {
+            margin-left: 5px;
+        }
+
+        .navbar .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .navbar .buttons a {
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .navbar .buttons .live-demo {
+            border: 1px solid rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+        }
+
+        .navbar .buttons .get-started {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .main {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .main h1 {
+            font-size: 54px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .main h1 .line-break {
+            display: block;
+        }
+
+        .main p {
+            font-size: 16px;
+            color: #6c757d;
+            margin: 20px 0;
+        }
+
+        .main p .line-break {
+            display: block;
+        }
+
+        .main .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .main .buttons a {
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .main .buttons .get-started {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .main .buttons .live-demo {
+            border: 1px solid #000;
+            color: #000;
+        }
+
+        .main .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .main .content .grey-box {
+            order: 2;
+            width: 100%;
+            max-width: 400px;
+            height: 350px;
+            background-color: #e9ecef;
+            border-radius: 15px;
+        }
+
+        @media (min-width: 768px) {
+            .main .content {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+                gap: 10px;
+            }
+
+            .main .content .text {
+                max-width: 50%;
+            }
+
+            .main .content .grey-box {
+                order: 1;
+                max-width: 50%;
+            }
+        }
+
+        .footer {
+            text-align: left;
+            padding: 20px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .footer p {
+            font-size: 16px;
+            color: #6c757d;
+            margin: 0;
+        }
+
+        .footer p .line-break {
+            display: block;
+        }
+
+        .footer .logos {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .footer .logos img {
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            Version .2.0 Released with a new user database managements
+            <a href="#">
+                What's new
+            </a>
+        </div>
+        <div class="navbar">
+            <img src="smushi.png" alt="">
+            <nav>
+                <a href="#">
+                    Solutions
+                    <i class="fas fa-caret-down"></i>
+                </a>
+                <a href="#">
+                    Company
+                    <i class="fas fa-caret-down"></i>
+                </a>
+                <a href="#">
+                    Resources
+                    <i class="fas fa-caret-down"></i>
+                </a>
+                <a href="#">
+                    Pricing
+                </a>
+            </nav>
+            <div class="buttons">
+                <a class="live-demo" href="#">
+                    Live Demo
+                </a>
+                <a class="get-started" href="#">
+                    Get Started
+                </a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="content">
+                <div class="text">
+                    <h1>
+                        Manage your
+                        <span class="line-break">
+                            CRM right way
+                        </span>
+                    </h1>
+                    <p>
+                        Our platform brings new processes into smart
+                        <span class="line-break">
+                            CRM Solution. Manage your Customer
+                        </span>
+                        <span class="line-break">
+                            processes right way.
+                        </span>
+                    </p>
+                    <div class="buttons">
+                        <a class="get-started" href="#">
+                            Get Started
+                        </a>
+                        <a class="live-demo" href="#">
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="grey-box"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>
+                Improving the relationships
+                <span class="line-break">
+                    of customer and businesses:
+                </span>
+            </p>
+            <div class="logos">
+                <img src="Smushsi_l.png" alt="">
+                <img src="Marshi_l.png" alt="">
+                <img src="Cotokishi_l.png" alt="">
+                <img src="Ranshishi_l.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
