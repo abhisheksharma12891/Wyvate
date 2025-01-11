@@ -1,11 +1,11 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>
-        Smushsi Pricing
-    </title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smushsi Pricing</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -13,20 +13,17 @@
             padding: 0;
             background-color: #f5f5f5;
         }
-
         .header {
             background-color: #00a651;
             color: white;
             text-align: center;
             padding: 10px 0;
         }
-
         .header a {
             color: white;
             text-decoration: underline;
             font-weight: 600;
         }
-
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -34,29 +31,23 @@
             padding: 20px;
             background-color: white;
         }
-
         .navbar img {
             height: 40px;
             margin-left: 50px;
-
         }
-
         .navbar .nav-links {
             display: flex;
             gap: 20px;
         }
-
         .navbar .nav-links a {
             color: #333;
             text-decoration: none;
             font-weight: 600;
         }
-
         .navbar .nav-buttons {
             display: flex;
             gap: 10px;
         }
-
         .navbar .nav-buttons button {
             padding: 10px 20px;
             border: 1px solid #00a651;
@@ -66,23 +57,19 @@
             cursor: pointer;
             border-radius: 5px;
         }
-
-        .navbar .nav-buttons button.get-started {
+        .navbar .nav-buttons .get-started {
             background-color: #00a651;
             color: white;
         }
-
         .main-content {
             text-align: center;
             padding: 50px 20px;
         }
-
         .main-content h1 {
             font-size: 36px;
             font-weight: 700;
             color: #333;
         }
-
         .billing-toggle {
             display: flex;
             justify-content: center;
@@ -90,12 +77,10 @@
             gap: 10px;
             margin: 20px 0;
         }
-
         .billing-toggle span {
             font-weight: 600;
             color: #333;
         }
-
         .billing-toggle .toggle-switch {
             position: relative;
             width: 50px;
@@ -104,7 +89,6 @@
             border-radius: 25px;
             cursor: pointer;
         }
-
         .billing-toggle .toggle-switch::after {
             content: '';
             position: absolute;
@@ -116,18 +100,15 @@
             border-radius: 50%;
             transition: 0.3s;
         }
-
         .billing-toggle .toggle-switch.active::after {
             left: 27px;
         }
-
         .pricing-cards {
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
         }
-
         .pricing-card {
             background-color: white;
             border-radius: 10px;
@@ -136,30 +117,25 @@
             width: 300px;
             text-align: left;
         }
-
         .pricing-card h2 {
             font-size: 24px;
             font-weight: 700;
             color: #333;
         }
-
         .pricing-card p {
             font-size: 14px;
             color: #666;
         }
-
         .pricing-card .price {
             font-size: 24px;
             font-weight: 700;
             color: #333;
             margin: 20px 0;
         }
-
         .pricing-card ul {
             list-style: none;
             padding: 0;
         }
-
         .pricing-card ul li {
             display: flex;
             align-items: center;
@@ -168,11 +144,9 @@
             color: #333;
             margin: 10px 0;
         }
-
         .pricing-card ul li i {
             color: #00a651;
         }
-
         .pricing-card button {
             width: 100%;
             padding: 10px;
@@ -183,16 +157,13 @@
             cursor: pointer;
             border-radius: 5px;
         }
-
         @media (max-width: 768px) {
             .navbar .nav-links {
                 display: none;
             }
-
             .navbar .nav-buttons {
                 display: none;
             }
-
             .pricing-cards {
                 flex-direction: column;
                 align-items: center;
@@ -203,171 +174,66 @@
 
 <body>
     <div class="header">
-        <span>
-            Version .2.0 Released with a new user database managements
-        </span>
-        <a href="#">
-            What's new
-        </a>
+        <span>Version .2.0 Released with a new user database management</span>
+        <a href="#">What's new</a>
     </div>
     <div class="navbar">
-        <img src="smushsi.png" alt="">
+        <img src="smushsi.png" alt="Logo">
         <div class="nav-links">
-            <a href="#">
-                Solutions
-                <i class="fas fa-caret-down"></i>
-
-            </a>
-            <a href="#">
-                Company
-                <i class="fas fa-caret-down"></i>
-
-            </a>
-            <a href="#">
-                Resources
-                <i class="fas fa-caret-down"></i>
-
-            </a>
-            <a href="#">
-                Pricing
-            </a>
+            <a href="#">Solutions <i class="fas fa-caret-down"></i></a>
+            <a href="#">Company <i class="fas fa-caret-down"></i></a>
+            <a href="#">Resources <i class="fas fa-caret-down"></i></a>
+            <a href="#">Pricing</a>
         </div>
         <div class="nav-buttons">
-            <button>
-                Live Demo
-            </button>
-            <button class="get-started">
-                Get Started
-            </button>
+            <button>Live Demo</button>
+            <button class="get-started">Get Started</button>
         </div>
     </div>
     <div class="main-content">
-        <h1>
-            Listen your customers with smart solutions
-        </h1>
+        <h1>Listen your customers with smart solutions</h1>
         <div class="billing-toggle">
-            <span>
-                Billed monthly
-            </span>
-            <div class="toggle-switch">
-            </div>
-            <span>
-                Billed yearly
-            </span>
+            <span>Billed monthly</span>
+            <div class="toggle-switch"></div>
+            <span>Billed yearly</span>
         </div>
         <div class="pricing-cards">
             <div class="pricing-card">
-                <h2>
-                    Smart
-                </h2>
-                <p>
-                    Best for Starting Businesses
-                </p>
-                <div class="price">
-                    $6 / mo
-                </div>
+                <h2>Smart</h2>
+                <p>Best for Starting Businesses</p>
+                <div class="price">$6 / mo</div>
                 <ul>
-                    <li>
-                        <i class="fas fa-check-circle">
-                        </i>
-                        Bots and Automations
-                    </li>
-                    <li>
-                        <i class="fas fa-check-circle">
-                        </i>
-                        Customer Behavior Analytics
-                    </li>
-                    <li>
-                        <i class="fas fa-check-circle">
-                        </i>
-                        Live Support 24/7
-                    </li>
+                    <li><i class="fas fa-check-circle"></i>Bots and Automations</li>
+                    <li><i class="fas fa-check-circle"></i>Customer Behavior Analytics</li>
+                    <li><i class="fas fa-check-circle"></i>Live Support 24/7</li>
                 </ul>
-                <button>
-                    Get Started
-                </button>
+                <button>Get Started</button>
             </div>
             <div class="pricing-card">
-                <h2>
-                    Pro
-                </h2>
-                <p>
-                    Best for Freelancers
-                </p>
-                <div class="price">
-                    $9 / mo
-                </div>
+                <h2>Pro</h2>
+                <p>Best for Freelancers</p>
+                <div class="price">$9 / mo</div>
                 <ul>
-                    <li>
-                        <i class="fas fa-check-circle">
-                        </i>
-                        Omnichannel Sorting
-                    </li>
-                    <li>
-                        <i class="fas fa-check-circle">
-                        </i>
-                        Customer Placement Editor
-                    </li>
-                    <li>
-                        <i class="fas fa-check-circle">
-                        </i>
-                        Live Assistant
-                    </li>
-                    <li>
-                        <i class="fas fa-check-circle">
-                        </i>
-                        Path Exampler
-                    </li>
-                    <li>
-                        <i class="fas fa-check-circle">
-                        </i>
-                        Feedback Validator
-                    </li>
-                    <li>
-                        <i class="fas fa-check-circle">
-                        </i>
-                        Everything in Smart
-                    </li>
+                    <li><i class="fas fa-check-circle"></i>Omnichannel Sorting</li>
+                    <li><i class="fas fa-check-circle"></i>Customer Placement Editor</li>
+                    <li><i class="fas fa-check-circle"></i>Live Assistant</li>
+                    <li><i class="fas fa-check-circle"></i>Path Exampler</li>
+                    <li><i class="fas fa-check-circle"></i>Feedback Validator</li>
+                    <li><i class="fas fa-check-circle"></i>Everything in Smart</li>
                 </ul>
-                <button>
-                    Get Started
-                </button>
+                <button>Get Started</button>
             </div>
             <div class="pricing-card">
-                <h2>
-                    Diamond
-                </h2>
-                <p>
-                    Best for Freelancers
-                </p>
-                <div class="price">
-                    $24 / mo
-                </div>
+                <h2>Diamond</h2>
+                <p>Best for Enterprises</p>
+                <div class="price">$24 / mo</div>
                 <ul>
-                    <li>
-                        <i class="fas fa-check-circle">
-                        </i>
-                        Referral converter
-                    </li>
-                    <li>
-                        <i class="fas fa-check-circle">
-                        </i>
-                        Marketing Engagement
-                    </li>
-                    <li>
-                        <i class="fas fa-check-circle">
-                        </i>
-                        Template Starter
-                    </li>
-                    <li>
-                        <i class="fas fa-check-circle">
-                        </i>
-                        Everything in Pro
-                    </li>
+                    <li><i class="fas fa-check-circle"></i>Referral Converter</li>
+                    <li><i class="fas fa-check-circle"></i>Marketing Engagement</li>
+                    <li><i class="fas fa-check-circle"></i>Template Starter</li>
+                    <li><i class="fas fa-check-circle"></i>Everything in Pro</li>
                 </ul>
-                <button>
-                    Get Started
-                </button>
+                <button>Get Started</button>
             </div>
         </div>
     </div>
@@ -377,5 +243,4 @@
         });
     </script>
 </body>
-
 </html>
